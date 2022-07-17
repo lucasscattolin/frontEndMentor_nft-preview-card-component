@@ -1,0 +1,120 @@
+body {
+    background-color: $darkBlueBg;
+}
+
+.component {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container {
+    background-color: $darkBlueCard;
+    max-height: 60rem;
+    max-width: 35rem;
+    border-radius: 2rem;
+    margin: auto;
+    padding: 2.5rem;
+
+    .img {
+        background-image: url(../img/image-equilibrium.jpg);
+        height: 30rem;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 1rem;
+
+        .transparency {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                visibility: hidden;
+            }
+            
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 255, 247,0.5);
+                border-radius: 1rem;
+
+                svg {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    h1 {
+        padding-top: 3rem;
+        font-size: 2.4rem;
+
+        &:hover {
+            color: $cyan;
+            cursor: pointer;
+        }
+    }
+
+    .text {
+        line-height: 2.5rem;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+
+        .price, .price p {
+            color: $cyan;
+            font-weight: 700;
+        }
+
+        .minicont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .separator {
+        height: 0.1rem;
+        background-color: $darkBlueLine;
+        margin: 1.6rem 0;
+
+    }
+
+    .creator {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .picture {
+            background-image: url(../img/image-avatar.png);
+            background-size: cover;
+            border: 1px solid $white;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+
+        }
+
+        p {
+            span {
+                color: $white;
+
+            &:hover {
+                color: $cyan;
+                cursor: pointer;
+            }
+            }
+        }
+    }
+}
